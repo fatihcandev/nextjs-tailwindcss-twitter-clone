@@ -1,0 +1,7 @@
+.container {
+  @apply grid sm:grid-cols-sm md:grid-cols-md lg:grid-cols-lg min-h-full bg-white dark:bg-dim-primary-dark;
+}
+
+.inner {
+  @apply flex flex-col;
+}
