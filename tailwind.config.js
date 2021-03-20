@@ -2,12 +2,31 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
+    fontFamily: {
+      sans: ['-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial', 'sans-serif'],
+    },
+    fontSize: {
+      sm: '13px',
+      base: '15px',
+      lg: '20px',
+    },
+    fontWeight: {
+      regular: 400,
+      bold: 700,
+      xbold: 800,
+    },
+    lineHeight: {
+      sm: '16px',
+      base: '20px',
+      lg: '24px',
+    },
     screens: {
       sm: '500px',
       md: '1005px',
-      lg: '1280px',
+      lg: '1281px',
     },
     colors: {
+      white: '#ffffff',
       blue: '#1a91da',
       text: {
         primary: '#0f1419',
@@ -37,6 +56,13 @@ module.exports = {
         like: 'rgba(224, 36, 94, 0.1)',
       },
       overlay: 'rgba(0, 0, 0, 0.4)',
+    },
+    extend: {
+      gridTemplateColumns: {
+        sm: '70px 1fr',
+        md: '70px 1fr 28.85%',
+        lg: '21.46% 1fr 27.32%',
+      },
     },
   },
   variants: {
