@@ -1,9 +1,9 @@
 .container {
-  @apply grid h-screen bg-white sm:grid-cols-sm md:grid-cols-md lg:grid-cols-lg dark:bg-dim-primary-dark;
+  @apply grid h-screen bg-white sm:grid-cols-layout-sm md:grid-cols-layout-md lg:grid-cols-layout-lg dark:bg-dim-primary-dark;
 }
 
 .inner {
-  @apply grid grid-rows-xs sm:grid-rows-sm;
+  @apply grid grid-rows-layout-xs sm:grid-rows-layout-sm;
 }
 
 /* 

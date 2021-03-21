@@ -62,13 +62,13 @@ module.exports = {
         17: '4.5rem',
       },
       gridTemplateColumns: {
-        sm: '70px 1fr',
-        md: '70px 1fr 28.85%',
-        lg: '21.46% 1fr 27.32%',
+        'layout-sm': '70px 1fr',
+        'layout-md': '70px 1fr 28.85%',
+        'layout-lg': '21.46% 1fr 27.32%',
       },
       gridTemplateRows: {
-        xs: '53px 1fr 53px',
-        sm: '53px 1fr',
+        'layout-xs': '53px 1fr 53px',
+        'layout-sm': '53px 1fr',
       },
     },
   },
