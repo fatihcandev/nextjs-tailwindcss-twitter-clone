@@ -5,14 +5,21 @@ import { NavbarMobile } from '../NavbarMobile'
 import { Sidebar } from '../Sidebar'
 import { TweetBox } from '../TweetBox'
 
+import { IconName } from '../../types'
+
 import styles from './Layout.module.css'
 
-const Layout: React.FC = ({ children }) => {
+interface ILayoutProps {
+  headerTitle: string
+  headerIcon?: IconName
+}
+
+const Layout: React.FC<ILayoutProps> = ({ headerTitle, headerIcon, children }) => {
   return (
     <div className={styles.container}>
       <Navbar />
       <div className={styles.inner}>
-        <Header />
+        <Header title={headerTitle} icon={headerIcon} />
         <TweetBox />
         <main>{children}</main>
         <NavbarMobile />

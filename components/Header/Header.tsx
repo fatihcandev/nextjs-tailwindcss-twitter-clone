@@ -1,17 +1,27 @@
 import React from 'react'
 import { Avatar } from '../Avatar'
+import { Typography } from '../Typography'
+import { Icon } from '../Icon'
+
+import { IconName } from '../../types'
 
 import styles from './Header.module.css'
 
 interface IHeaderProps {
+  title: string
+  icon?: IconName
   className?: string
-  onAvatarClick: () => void
+  onAvatarClick?: () => void
 }
 
-const Header: React.FC<IHeaderProps> = ({ className = '', onAvatarClick }) => {
+const Header = ({ title, icon, className = '', onAvatarClick }: IHeaderProps) => {
   return (
     <div className={`${styles.container} ${className}`}>
-      <Avatar src="/images/fatih.jpg" onClick={onAvatarClick} />
+      <Avatar src="/images/fatih.jpg" onClick={onAvatarClick} className={styles.avatar} />
+      <Typography variant="lgBold" className={styles.title}>
+        {title}
+      </Typography>
+      {icon && <Icon name={icon} color="blue" className={styles.icon} />}
     </div>
   )
 }

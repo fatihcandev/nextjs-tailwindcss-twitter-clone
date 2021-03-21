@@ -1,3 +1,15 @@
 .container {
   @apply flex items-center px-4 sticky top-0 bg-white border-gray-mid border-b;
 }
+
+.avatar {
+  @apply sm:hidden;
+}
+
+.title {
+  @apply ml-6 sm:ml-0;
+}
+
+.icon {
+  @apply ml-auto;
+}

@@ -4,7 +4,7 @@ import { Layout } from '../components/Layout'
 
 const Home = () => {
   return (
-    <Layout>
+    <Layout headerTitle="Latest Tweets" headerIcon="spark">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto debitis nihil
       veritatis ipsum sequi facilis, quod, nesciunt quisquam doloribus tenetur unde temporibus
       laudantium voluptate corrupti, necessitatibus inventore excepturi sit?Lorem ipsum dolor sit

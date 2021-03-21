@@ -33,7 +33,9 @@ const Avatar: React.FC<IAvatarProps> = ({ size, src, isProfile, className, onCli
   }
 
   return (
-    <Image src={src} width={getSize()} height={getSize()} className={className} onClick={onClick} />
+    <div style={{ width: getSize(), height: getSize() }} className={className}>
+      <Image src={src} width={getSize()} height={getSize()} onClick={onClick} />
+    </div>
   )
 }
 
