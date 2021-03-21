@@ -50,10 +50,10 @@ module.exports = {
         },
       },
       hover: {
-        blue: 'rgba(29, 161, 242, 0.1)',
+        blue: 'rgba(29, 161, 242, 0.2)',
         gray: 'rgba(0, 0, 0, 0.03)',
-        rt: 'rgba(23, 191, 99, 0.1)',
-        like: 'rgba(224, 36, 94, 0.1)',
+        rt: 'rgba(23, 191, 99, 0.2)',
+        like: 'rgba(224, 36, 94, 0.2)',
       },
       overlay: 'rgba(0, 0, 0, 0.4)',
     },
