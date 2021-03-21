@@ -7,7 +7,7 @@
 }
 
 .title {
-  @apply ml-6 sm:ml-0;
+  @apply flex flex-col ml-6 sm:ml-0;
 }
 
 .icon {

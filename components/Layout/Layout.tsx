@@ -11,15 +11,16 @@ import styles from './Layout.module.css'
 
 interface ILayoutProps {
   headerTitle: string
+  headerSubtitle?: string
   headerIcon?: IconName
 }
 
-const Layout: React.FC<ILayoutProps> = ({ headerTitle, headerIcon, children }) => {
+const Layout: React.FC<ILayoutProps> = ({ headerTitle, headerSubtitle, headerIcon, children }) => {
   return (
     <div className={styles.container}>
       <Navbar />
       <div className={styles.inner}>
-        <Header title={headerTitle} icon={headerIcon} />
+        <Header title={headerTitle} subtitle={headerSubtitle} icon={headerIcon} />
         <TweetBox />
         <main>{children}</main>
         <NavbarMobile />
