@@ -1,7 +1,12 @@
 .container {
-  @apply grid sm:grid-cols-sm md:grid-cols-md lg:grid-cols-lg min-h-full bg-white dark:bg-dim-primary-dark;
+  @apply grid h-screen bg-white sm:grid-cols-sm md:grid-cols-md lg:grid-cols-lg dark:bg-dim-primary-dark;
 }
 
 .inner {
-  @apply flex flex-col;
+  @apply grid grid-rows-xs sm:grid-rows-sm;
 }
+
+/* 
+.main {
+  @apply pt-14;
+} */

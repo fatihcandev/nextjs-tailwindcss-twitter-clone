@@ -50,7 +50,7 @@ module.exports = {
         },
       },
       hover: {
-        primary: 'rgba(29, 161, 242, 0.1)',
+        blue: 'rgba(29, 161, 242, 0.1)',
         gray: 'rgba(0, 0, 0, 0.03)',
         rt: 'rgba(23, 191, 99, 0.1)',
         like: 'rgba(224, 36, 94, 0.1)',
@@ -58,10 +58,17 @@ module.exports = {
       overlay: 'rgba(0, 0, 0, 0.4)',
     },
     extend: {
+      spacing: {
+        17: '4.5rem',
+      },
       gridTemplateColumns: {
         sm: '70px 1fr',
         md: '70px 1fr 28.85%',
         lg: '21.46% 1fr 27.32%',
+      },
+      gridTemplateRows: {
+        xs: '53px 1fr 53px',
+        sm: '53px 1fr',
       },
     },
   },
