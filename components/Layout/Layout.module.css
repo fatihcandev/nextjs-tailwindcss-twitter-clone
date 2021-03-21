@@ -1,5 +1,5 @@
 .container {
-  @apply grid h-screen bg-white sm:grid-cols-layout-sm md:grid-cols-layout-md lg:grid-cols-layout-lg dark:bg-dim-primary-dark;
+  @apply grid h-screen justify-center bg-white sm:grid-cols-layout-sm md:grid-cols-layout-md lg:grid-cols-layout-lg dark:bg-dim-primary-dark;
 }
 
 .inner {
