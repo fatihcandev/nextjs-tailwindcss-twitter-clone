@@ -2,10 +2,11 @@ import React from 'react'
 
 interface ITypographyProps {
   variant: 'sm' | 'smBold' | 'base' | 'baseBold' | 'lg' | 'lgBold'
+  color: string
   className?: string
 }
 
-const Typography: React.FC<ITypographyProps> = ({ variant, className = '', children }) => {
+const Typography: React.FC<ITypographyProps> = ({ variant, color, className = '', children }) => {
   const smStyle = 'text-sm leading-sm font-regular'
   const baseStyle = 'text-base leading-base font-regular'
   const lgStyle = 'text-lg leading-lg font-regular'
@@ -27,7 +28,7 @@ const Typography: React.FC<ITypographyProps> = ({ variant, className = '', child
     }
   }
 
-  return <span className={`${getStyle()} ${className}`}>{children}</span>
+  return <span className={`${getStyle()} ${color} ${className}`}>{children}</span>
 }
 
 export default Typography
