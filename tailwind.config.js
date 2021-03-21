@@ -67,8 +67,8 @@ module.exports = {
         'layout-lg': '21.46% 1fr 27.32%',
       },
       gridTemplateRows: {
-        'layout-xs': '53px 1fr 53px',
-        'layout-sm': '53px 1fr',
+        'layout-inner-xs': '53px 1fr 53px',
+        'layout-inner-sm': '53px 118px 1fr',
       },
     },
   },
