@@ -1,3 +1,5 @@
+export type TypographyVariant = 'sm' | 'smBold' | 'base' | 'baseBold' | 'lg' | 'lgBold'
+
 export type IconName =
   | 'arrowBottom'
   | 'bookmarkFill'

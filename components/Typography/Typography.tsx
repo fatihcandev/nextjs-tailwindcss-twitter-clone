@@ -1,7 +1,9 @@
 import React from 'react'
 
+import { TypographyVariant } from '../../types'
+
 interface ITypographyProps {
-  variant: 'sm' | 'smBold' | 'base' | 'baseBold' | 'lg' | 'lgBold'
+  variant: TypographyVariant
   color: string
   className?: string
 }
