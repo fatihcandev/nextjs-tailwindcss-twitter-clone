@@ -5,7 +5,7 @@ import * as Icons from '../icons'
 
 interface IIconProps {
   name: IconName
-  color: string
+  color?: string
   className?: string
   size?: string
 }
