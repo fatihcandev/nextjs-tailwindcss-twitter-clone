@@ -33,7 +33,13 @@ const Avatar: React.FC<IAvatarProps> = ({ size, src, isProfile, className, onCli
   }
 
   return (
-    <Image src={src} width={getSize()} height={getSize()} className={className} onClick={onClick} />
+    <Image
+      src="/images/fatih.jpg"
+      width={getSize()}
+      height={getSize()}
+      className={className}
+      onClick={onClick}
+    />
   )
 }
 
