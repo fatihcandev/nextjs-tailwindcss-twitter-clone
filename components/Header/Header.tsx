@@ -21,7 +21,7 @@ const Header = ({ title, icon, className = '', onAvatarClick }: IHeaderProps) =>
       <Typography variant="lgBold" className={styles.title}>
         {title}
       </Typography>
-      {icon && <Icon name={icon} color="blue" className={styles.icon} />}
+      {icon && <Icon name={icon} color="text-blue" className={styles.icon} />}
     </div>
   )
 }
