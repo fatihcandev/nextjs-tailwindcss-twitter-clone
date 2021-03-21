@@ -12,7 +12,13 @@ interface IButtonProps {
 const Button = React.forwardRef<HTMLAnchorElement, IButtonProps>(
   ({ onClick, href, className = '', children }, ref) => {
     return (
-      <a href={href} onClick={onClick} className={`${styles.container} ${className}`} ref={ref}>
+      <a
+        role="button"
+        href={href}
+        onClick={onClick}
+        className={`${styles.container} ${className}`}
+        ref={ref}
+      >
         {children}
       </a>
     )
