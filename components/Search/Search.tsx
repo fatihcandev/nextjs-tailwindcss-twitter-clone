@@ -5,14 +5,21 @@ import { Icon } from '../Icon'
 import styles from './Search.module.css'
 
 interface ISearchProps {
+  value?: string
+  onChange?: (value: string) => void
   className?: string
 }
 
-const Search = ({ className = '' }: ISearchProps) => {
+const Search = ({ value, onChange, className = '' }: ISearchProps) => {
   const [isFocused, setIsFocused] = useState<boolean>(false)
 
   const toggleFocus = () => {
     setIsFocused((prevState) => !prevState)
+  }
+
+  const handleChange: React.ChangeEventHandler<HTMLInputElement> = (event) => {
+    const { value } = event.target
+    onChange && onChange(value)
   }
 
   return (
@@ -26,6 +33,8 @@ const Search = ({ className = '' }: ISearchProps) => {
         className={styles.input}
         onFocus={toggleFocus}
         onBlur={toggleFocus}
+        value={value}
+        onChange={handleChange}
       />
     </div>
   )

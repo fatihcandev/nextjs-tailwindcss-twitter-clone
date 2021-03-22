@@ -15,9 +15,18 @@ interface ILayoutProps {
   headerTitle?: string
   headerSubtitle?: string
   headerIcon?: IconName
+  searchValue?: string
+  onSearchValueChange?: (value: string) => void
 }
 
-const Layout: React.FC<ILayoutProps> = ({ headerTitle, headerSubtitle, headerIcon, children }) => {
+const Layout: React.FC<ILayoutProps> = ({
+  headerTitle,
+  headerSubtitle,
+  headerIcon,
+  searchValue,
+  onSearchValueChange,
+  children,
+}) => {
   const { pathname } = useRouter()
   const isSearch = pathname === '/explore'
   return (
@@ -29,6 +38,8 @@ const Layout: React.FC<ILayoutProps> = ({ headerTitle, headerSubtitle, headerIco
           subtitle={headerSubtitle}
           icon={headerIcon}
           isSearch={isSearch}
+          searchValue={searchValue}
+          onSearchValueChange={onSearchValueChange}
         />
         <TweetBox />
         <main>{children}</main>

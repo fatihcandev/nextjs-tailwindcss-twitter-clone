@@ -13,6 +13,8 @@ interface IHeaderProps {
   subtitle?: string
   icon?: IconName
   isSearch?: React.ReactNode
+  searchValue?: string
+  onSearchValueChange?: (value: string) => void
   className?: string
   onAvatarClick?: () => void
 }
@@ -22,6 +24,8 @@ const Header = ({
   subtitle,
   icon,
   isSearch,
+  searchValue,
+  onSearchValueChange,
   className = '',
   onAvatarClick,
 }: IHeaderProps) => {
@@ -31,7 +35,7 @@ const Header = ({
         <Avatar src="/images/fatih.jpg" onClick={onAvatarClick} />
       </div>
       {isSearch ? (
-        <Search className={styles.search} />
+        <Search className={styles.search} value={searchValue} onChange={onSearchValueChange} />
       ) : (
         <div className={styles.title}>
           {title && (
