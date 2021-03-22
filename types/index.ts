@@ -30,3 +30,4 @@ export type IconName =
   | 'share'
   | 'spark'
   | 'twitter'
+  | 'x'

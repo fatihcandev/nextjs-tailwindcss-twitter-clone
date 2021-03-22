@@ -28,7 +28,8 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       white: '#ffffff',
-      blue: '#1a91da',
+      blue: '#1da1f2',
+      'blue-dark': '#1a91da',
       text: {
         primary: '#0f1419',
         secondary: '#5b7083',
@@ -65,7 +66,7 @@ module.exports = {
       gridTemplateColumns: {
         'layout-sm': '70px 1fr',
         'layout-md': '70px 600px 280px',
-        'layout-lg': '240px 600px 350px',
+        'layout-lg': '220px 600px 350px',
       },
       gridTemplateRows: {
         'layout-inner-xs': '53px 1fr 53px',

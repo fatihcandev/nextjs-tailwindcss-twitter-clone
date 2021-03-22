@@ -72,6 +72,8 @@ const Icon = ({ name, color, size = '22.5', className = '' }: IIconProps) => {
       return <Icons.Spark className={`${color} ${className}`} width={size} height={size} />
     case 'twitter':
       return <Icons.Twitter className={`${color} ${className}`} width={size} height={size} />
+    case 'x':
+      return <Icons.X className={`${color} ${className}`} width={size} height={size} />
     default:
       return null
   }

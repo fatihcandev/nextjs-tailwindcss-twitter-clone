@@ -10,7 +10,7 @@ interface ISearchProps {
   className?: string
 }
 
-const Search = ({ value, onChange, className = '' }: ISearchProps) => {
+const Search = ({ value = '', onChange, className = '' }: ISearchProps) => {
   const [isFocused, setIsFocused] = useState<boolean>(false)
 
   const toggleFocus = () => {
@@ -20,6 +20,10 @@ const Search = ({ value, onChange, className = '' }: ISearchProps) => {
   const handleChange: React.ChangeEventHandler<HTMLInputElement> = (event) => {
     const { value } = event.target
     onChange && onChange(value)
+  }
+
+  const handleClearSearch = () => {
+    onChange && onChange('')
   }
 
   return (
@@ -36,6 +40,11 @@ const Search = ({ value, onChange, className = '' }: ISearchProps) => {
         value={value}
         onChange={handleChange}
       />
+      {value.length > 0 && (
+        <div className={styles.clearButton} role="button" onClick={handleClearSearch}>
+          <Icon name="x" size="16" />
+        </div>
+      )}
     </div>
   )
 }
