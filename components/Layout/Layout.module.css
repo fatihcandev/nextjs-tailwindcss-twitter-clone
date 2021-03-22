@@ -3,7 +3,7 @@
 }
 
 .inner {
-  @apply grid grid-rows-layout-inner-xs sm:grid-rows-layout-inner-sm;
+  @apply grid grid-cols-1 grid-rows-layout-inner-xs sm:grid-rows-layout-inner-sm;
 }
 
 /* 

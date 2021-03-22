@@ -1,15 +1,15 @@
 .container {
-  @apply flex items-center px-4 sticky top-0 bg-white border-gray-mid border-b;
+  @apply flex items-center px-4 sticky top-0 bg-white border-gray-mid border-b dark:bg-dim-primary-dark dark:border-dim-primary-xlight;
 }
 
 .avatar {
   @apply sm:hidden;
 }
 
-.title {
-  @apply flex flex-col ml-6 sm:ml-0;
+.search {
+  @apply max-w-[184px] mx-auto sm:max-w-[unset] sm:w-full sm:mr-8;
 }
 
-.icon {
-  @apply ml-auto;
+.title {
+  @apply flex flex-col ml-6 mr-auto sm:ml-0;
 }

@@ -26,6 +26,7 @@ module.exports = {
       lg: '1281px',
     },
     colors: {
+      transparent: 'transparent',
       white: '#ffffff',
       blue: '#1a91da',
       text: {

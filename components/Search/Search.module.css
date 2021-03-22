@@ -1,0 +1,15 @@
+.container {
+  @apply flex items-center py-1 px-5 bg-gray-mid text-text-secondary rounded-full sm:py-1.5;
+}
+
+.input {
+  @apply bg-transparent outline-none ml-5 font-regular text-base placeholder-text-secondary;
+}
+
+.focused {
+  @apply bg-white border border-blue;
+}
+
+.iconFocused {
+  @apply text-blue;
+}
