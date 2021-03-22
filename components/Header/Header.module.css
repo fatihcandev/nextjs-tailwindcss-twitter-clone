@@ -7,7 +7,7 @@
 }
 
 .search {
-  @apply mx-6 sm:mr-8;
+  @apply mx-6 sm:w-full sm:ml-0 sm:mr-8;
 }
 
 .title {
