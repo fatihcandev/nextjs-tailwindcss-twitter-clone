@@ -64,6 +64,8 @@ const Icon = ({ name, color, size = '22.5', className = '' }: IIconProps) => {
       return <Icons.Retweet className={`${color} ${className}`} width={size} height={size} />
     case 'search':
       return <Icons.Search className={`${color} ${className}`} width={size} height={size} />
+    case 'searchFocused':
+      return <Icons.SearchFocused className={`${color} ${className}`} width={size} height={size} />
     case 'share':
       return <Icons.Share className={`${color} ${className}`} width={size} height={size} />
     case 'spark':

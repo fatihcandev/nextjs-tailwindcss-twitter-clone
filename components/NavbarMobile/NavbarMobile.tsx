@@ -30,7 +30,7 @@ const NavbarMobile = () => {
       ...navbarMobileItemsCommonProps,
       href: '/explore',
       className: getColorClass('/explore'),
-      iconName: showFilledIcon('/explore') ? 'search' : 'search',
+      iconName: showFilledIcon('/explore') ? 'searchFocused' : 'search',
     },
     {
       ...navbarMobileItemsCommonProps,

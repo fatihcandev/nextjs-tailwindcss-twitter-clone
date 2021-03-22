@@ -26,6 +26,7 @@ export type IconName =
   | 'reply'
   | 'retweet'
   | 'search'
+  | 'searchFocused'
   | 'share'
   | 'spark'
   | 'twitter'
