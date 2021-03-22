@@ -7,7 +7,7 @@
 }
 
 .search {
-  @apply max-w-[184px] mx-auto sm:max-w-[unset] sm:w-full sm:mr-8;
+  @apply mx-6 sm:mr-8;
 }
 
 .title {

@@ -46,7 +46,11 @@ const Header = ({
           )}
         </div>
       )}
-      {icon && <Icon name={icon} color="text-blue" />}
+      {icon && (
+        <div>
+          <Icon name={icon} color="text-blue" />
+        </div>
+      )}
     </div>
   )
 }
