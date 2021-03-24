@@ -26,6 +26,8 @@ const Typography: React.FC<ITypographyProps> = ({ variant, color, className = ''
       case 'lg':
         return lgStyle
       case 'lgBold':
+        return `${lgStyle} font-bold`
+      case 'lgXBold':
         return `${lgStyle} font-xbold`
     }
   }

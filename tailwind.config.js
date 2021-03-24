@@ -52,10 +52,10 @@ module.exports = {
         },
       },
       hover: {
-        blue: 'rgba(29, 161, 242, 0.2)',
+        blue: 'rgba(29, 161, 242, 0.1)',
         gray: 'rgba(0, 0, 0, 0.03)',
-        rt: 'rgba(23, 191, 99, 0.2)',
-        like: 'rgba(224, 36, 94, 0.2)',
+        rt: 'rgba(23, 191, 99, 0.1)',
+        like: 'rgba(224, 36, 94, 0.1)',
       },
       overlay: 'rgba(0, 0, 0, 0.4)',
     },
@@ -66,7 +66,7 @@ module.exports = {
       gridTemplateColumns: {
         'layout-sm': '70px 1fr',
         'layout-md': '70px 600px 280px',
-        'layout-lg': '220px 600px 350px',
+        'layout-lg': '275px 600px 350px',
       },
       gridTemplateRows: {
         'layout-inner-xs': '53px 1fr 53px',

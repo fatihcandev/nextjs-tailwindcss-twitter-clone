@@ -39,7 +39,7 @@ const Header = ({
       ) : (
         <div className={styles.title}>
           {title && (
-            <Typography variant="lgBold" color="text-text-primary dark:text-dim-text-primary">
+            <Typography variant="lgXBold" color="text-text-primary dark:text-dim-text-primary">
               {title}
             </Typography>
           )}

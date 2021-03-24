@@ -8,8 +8,23 @@
   border-r 
   border-gray-mid 
 
-  sm:flex 
+  sm:flex
   
 dark:bg-dim-primary-dark 
 dark:border-dim-primary-xlight;
+}
+
+.inner {
+  @apply flex 
+  flex-col
+  items-start
+  px-3;
+}
+
+.text {
+  @apply ml-5
+  mr-4
+  hidden
+  
+  lg:flex;
 }

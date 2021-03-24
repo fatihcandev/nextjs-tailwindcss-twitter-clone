@@ -1,4 +1,4 @@
-export type TypographyVariant = 'sm' | 'smBold' | 'base' | 'baseBold' | 'lg' | 'lgBold'
+export type TypographyVariant = 'sm' | 'smBold' | 'base' | 'baseBold' | 'lg' | 'lgBold' | 'lgXBold'
 
 export type IconName =
   | 'arrowBottom'

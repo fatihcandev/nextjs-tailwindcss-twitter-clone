@@ -1,7 +1,10 @@
 .container {
-  @apply p-2 
+  @apply flex
+  items-center
+  p-3
   rounded-full 
   transition-colors 
+  ease-out
   
   hover:bg-hover-blue 
   hover:text-blue 

@@ -1,19 +1,30 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { Button } from '../Button'
+import Button, { IButtonProps } from '../Button/Button'
 
-interface ILinkButtonProps {
+export interface ILinkButtonProps extends IButtonProps {
   href: string
-  className?: string
-  children: React.ReactNode
 }
 
-const LinkButton = ({ href, className, children }: ILinkButtonProps) => {
+const LinkButton = ({
+  href,
+  leftIcon,
+  rightIcon,
+  iconSize,
+  className,
+  children,
+}: ILinkButtonProps) => {
   return (
     <Link href={href} passHref>
-      <Button href={href} className={className}>
-        {children}
+      <Button
+        href={href}
+        leftIcon={leftIcon}
+        rightIcon={rightIcon}
+        iconSize={iconSize}
+        className={className}
+      >
+        {children && children}
       </Button>
     </Link>
   )
