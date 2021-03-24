@@ -1,3 +1,16 @@
 .container {
-  @apply grid grid-cols-4 justify-items-center items-center sticky bottom-0 bg-white border-gray-mid border-t sm:hidden dark:bg-dim-primary-dark dark:border-dim-primary-xlight;
+  @apply grid 
+  grid-cols-4 
+  justify-items-center 
+  items-center
+  sticky 
+  bottom-0 
+  bg-white 
+  border-t
+  border-gray-mid 
+  
+  sm:hidden 
+  
+  dark:bg-dim-primary-dark 
+  dark:border-dim-primary-xlight;
 }

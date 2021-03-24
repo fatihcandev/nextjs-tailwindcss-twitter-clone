@@ -1,13 +1,31 @@
 .container {
-  @apply flex items-center py-1 pl-5 min-w-0 bg-gray-mid text-text-secondary rounded-full sm:py-1.5;
+  @apply flex 
+  items-center 
+  py-1 
+  pl-5 
+  min-w-0 
+  bg-gray-mid 
+  text-text-secondary 
+  rounded-full 
+  
+  sm:py-1.5;
 }
 
 .input {
-  @apply bg-transparent outline-none ml-5 pr-3 w-full font-regular text-base placeholder-text-secondary;
+  @apply ml-5 
+  pr-3 
+  w-full 
+  bg-transparent 
+  font-regular 
+  text-base 
+  placeholder-text-secondary 
+  outline-none;
 }
 
 .focused {
-  @apply bg-white border border-blue;
+  @apply bg-white 
+  border 
+  border-blue;
 }
 
 .iconFocused {
@@ -15,5 +33,12 @@
 }
 
 .clearButton {
-  @apply flex p-[3px] rounded-full bg-blue text-white mr-3 hover:bg-blue-dark;
+  @apply flex 
+  p-[3px] 
+  mr-3
+bg-blue 
+text-white  
+  rounded-full 
+
+hover:bg-blue-dark;
 }

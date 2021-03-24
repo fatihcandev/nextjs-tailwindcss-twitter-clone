@@ -1,3 +1,8 @@
 .container {
-  @apply hidden pl-9 border-l border-gray-mid md:flex;
+  @apply hidden 
+  pl-9 
+  border-l 
+  border-gray-mid 
+  
+  md:flex;
 }

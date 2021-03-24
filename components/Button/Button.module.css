@@ -1,3 +1,11 @@
 .container {
-  @apply p-2 rounded-full transition-colors hover:bg-hover-blue hover:text-blue focus:bg-hover-blue focus:text-blue;
+  @apply p-2 
+  rounded-full 
+  transition-colors 
+  
+  hover:bg-hover-blue 
+  hover:text-blue 
+
+  focus:bg-hover-blue 
+  focus:text-blue;
 }

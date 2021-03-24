@@ -1,3 +1,5 @@
 .container {
-  @apply hidden sm:flex;
+  @apply hidden 
+  
+  sm:flex;
 }
