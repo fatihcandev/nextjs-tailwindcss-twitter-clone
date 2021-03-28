@@ -38,6 +38,7 @@ dark:border-dim-primary-xlight;
   mt-2
   w-12
   text-white
+  shadow-navbarTweetButton
 
   lg:w-[225px];
 }
