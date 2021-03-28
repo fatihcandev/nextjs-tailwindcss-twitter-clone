@@ -38,7 +38,7 @@ const Navbar = () => {
             More
           </Typography>
         </Button>
-        <Button type="primary" onClick={() => true} className={styles.tweetButton} full>
+        <Button type="primary" onClick={() => true} className={styles.tweetButton}>
           <Typography variant="baseBold" color="inherit" className={styles.tweetButtonText}>
             Tweet
           </Typography>
