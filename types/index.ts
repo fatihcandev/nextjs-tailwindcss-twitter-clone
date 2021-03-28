@@ -5,6 +5,7 @@ export type IconName =
   | 'bookmarkFill'
   | 'bookmark'
   | 'composeTweet'
+  | 'composeMessage'
   | 'emoji'
   | 'explore'
   | 'explorerFill'
