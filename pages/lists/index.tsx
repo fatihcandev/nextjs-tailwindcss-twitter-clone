@@ -4,7 +4,7 @@ import { Layout } from '../../components/Layout'
 
 const Lists = () => {
   return (
-    <Layout headerTitle="Lists" headerIcon="options">
+    <Layout headerTitle="Lists" headerPrimaryIcon="listsAdd" headerSecondaryIcon="more">
       Lists
     </Layout>
   )

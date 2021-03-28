@@ -4,7 +4,7 @@ import { Layout } from '../../components/Layout'
 
 const Notifications = () => {
   return (
-    <Layout headerTitle="Notifications" headerIcon="options">
+    <Layout headerTitle="Notifications" headerPrimaryIcon="options">
       Notifications
     </Layout>
   )

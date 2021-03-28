@@ -6,7 +6,11 @@ const Explore = () => {
   const [searchValue, setSearchValue] = useState<string>('')
 
   return (
-    <Layout headerIcon="options" searchValue={searchValue} onSearchValueChange={setSearchValue}>
+    <Layout
+      headerPrimaryIcon="options"
+      searchValue={searchValue}
+      onSearchValueChange={setSearchValue}
+    >
       Explore
     </Layout>
   )

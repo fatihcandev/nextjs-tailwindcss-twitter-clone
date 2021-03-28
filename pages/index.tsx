@@ -4,7 +4,7 @@ import { Layout } from '../components/Layout'
 
 const Home = () => {
   return (
-    <Layout headerTitle="Latest Tweets" headerIcon="spark">
+    <Layout headerTitle="Latest Tweets" headerPrimaryIcon="spark">
       Home
     </Layout>
   )

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Avatar } from '../Avatar'
 import { Typography } from '../Typography'
-import { Icon } from '../Icon'
 import { Search } from '../Search'
+import { IconButton } from '../IconButton'
 
 import { IconName } from '../../types'
 
@@ -11,7 +11,8 @@ import styles from './Header.module.css'
 interface IHeaderProps {
   title?: string
   subtitle?: string
-  icon?: IconName
+  primaryIcon?: IconName
+  secondaryIcon?: IconName
   isSearch?: React.ReactNode
   searchValue?: string
   onSearchValueChange?: (value: string) => void
@@ -22,7 +23,8 @@ interface IHeaderProps {
 const Header = ({
   title,
   subtitle,
-  icon,
+  primaryIcon,
+  secondaryIcon,
   isSearch,
   searchValue,
   onSearchValueChange,
@@ -50,10 +52,13 @@ const Header = ({
           )}
         </div>
       )}
-      {icon && (
-        <div>
-          <Icon name={icon} color="text-blue" />
-        </div>
+      {primaryIcon && <IconButton iconName={primaryIcon} iconColor="text-blue" />}
+      {secondaryIcon && (
+        <IconButton
+          iconName={secondaryIcon}
+          iconColor="text-blue"
+          className={styles.secondaryIcon}
+        />
       )}
     </div>
   )

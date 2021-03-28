@@ -4,7 +4,7 @@ import { Layout } from '../../components/Layout'
 
 const Bookmarks = () => {
   return (
-    <Layout headerTitle="Bookmarks" headerIcon="options">
+    <Layout headerTitle="Bookmarks" headerPrimaryIcon="options">
       Bookmarks
     </Layout>
   )

@@ -14,7 +14,8 @@ import styles from './Layout.module.css'
 interface ILayoutProps {
   headerTitle?: string
   headerSubtitle?: string
-  headerIcon?: IconName
+  headerPrimaryIcon?: IconName
+  headerSecondaryIcon?: IconName
   searchValue?: string
   onSearchValueChange?: (value: string) => void
 }
@@ -22,7 +23,8 @@ interface ILayoutProps {
 const Layout: React.FC<ILayoutProps> = ({
   headerTitle,
   headerSubtitle,
-  headerIcon,
+  headerPrimaryIcon,
+  headerSecondaryIcon,
   searchValue,
   onSearchValueChange,
   children,
@@ -36,7 +38,8 @@ const Layout: React.FC<ILayoutProps> = ({
         <Header
           title={headerTitle}
           subtitle={headerSubtitle}
-          icon={headerIcon}
+          primaryIcon={headerPrimaryIcon}
+          secondaryIcon={headerSecondaryIcon}
           isSearch={isSearch}
           searchValue={searchValue}
           onSearchValueChange={onSearchValueChange}
