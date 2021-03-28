@@ -43,11 +43,15 @@ dark:border-dim-primary-xlight;
 }
 
 .tweetButtonText {
-  @apply hidden lg:flex;
+  @apply hidden 
+  
+  lg:flex;
 }
 
 .tweetButtonIcon {
-  @apply flex lg:hidden;
+  @apply flex 
+  
+  lg:hidden;
 }
 
 .userSection {
@@ -61,15 +65,15 @@ dark:border-dim-primary-xlight;
 
 .userSectionUserDetails {
   @apply hidden 
-
-  lg:flex
   flex-col
-  ml-3;
+  ml-3
+
+  lg:flex;
 }
 
 .userSectionMoreIcon {
   @apply hidden
+  ml-auto
 
-  lg:flex
-  ml-auto;
+  lg:flex;
 }
