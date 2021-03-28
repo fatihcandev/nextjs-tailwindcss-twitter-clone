@@ -17,10 +17,12 @@ dark:border-dim-primary-xlight;
 .inner {
   @apply flex 
   flex-col
-  items-start
-  pr-3
-  pb-3
-  w-full;
+  items-center
+  w-full
+  
+  lg:items-start
+  lg:pr-3
+  lg:pb-3;
 }
 
 .text {
@@ -34,21 +36,40 @@ dark:border-dim-primary-xlight;
 .tweetButton {
   @apply h-12
   mt-2
-  max-w-[225px];
+  w-12
+  text-white
+
+  lg:max-w-[225px];
+}
+
+.tweetButtonText {
+  @apply hidden lg:flex;
+}
+
+.tweetButtonIcon {
+  @apply flex lg:hidden;
 }
 
 .userSection {
   @apply flex
   items-center
-  mt-auto;
+  justify-center
+  mt-9
+
+  lg:justify-start;
 }
 
 .userSectionUserDetails {
-  @apply flex
+  @apply hidden 
+
+  lg:flex
   flex-col
   ml-3;
 }
 
 .userSectionMoreIcon {
-  @apply ml-auto;
+  @apply hidden
+
+  lg:flex
+  ml-auto;
 }

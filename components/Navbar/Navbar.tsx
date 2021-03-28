@@ -39,9 +39,10 @@ const Navbar = () => {
           </Typography>
         </Button>
         <Button type="primary" onClick={() => true} className={styles.tweetButton} full>
-          <Typography variant="baseBold" color="text-white">
+          <Typography variant="baseBold" color="inherit" className={styles.tweetButtonText}>
             Tweet
           </Typography>
+          <Icon name="composeTweet" className={styles.tweetButtonIcon} />
         </Button>
         <Button onClick={() => true} className={styles.userSection} full>
           <Avatar src="/images/fatih.jpg" size="sm" />
