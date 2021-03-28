@@ -12,3 +12,15 @@
   focus:bg-hover-blue 
   focus:text-blue;
 }
+
+.primary {
+  @apply flex
+  justify-center
+  items-center
+  min-h-[30]
+  w-[75]
+  px-4
+  bg-blue
+
+  hover:bg-blue-dark;
+}
