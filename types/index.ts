@@ -17,6 +17,7 @@ export type IconName =
   | 'messagesFill'
   | 'messages'
   | 'more'
+  | 'moreWithCircle'
   | 'notificationFill'
   | 'notification'
   | 'options'

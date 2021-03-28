@@ -44,6 +44,8 @@ const Icon = ({ name, color, size = '22.5', className = '' }: IIconProps) => {
       return <Icons.MessagesFill className={`${color} ${className}`} width={size} height={size} />
     case 'more':
       return <Icons.More className={`${color} ${className}`} width={size} height={size} />
+    case 'moreWithCircle':
+      return <Icons.MoreWithCircle className={`${color} ${className}`} width={size} height={size} />
     case 'notification':
       return <Icons.Notification className={`${color} ${className}`} width={size} height={size} />
     case 'notificationFill':
