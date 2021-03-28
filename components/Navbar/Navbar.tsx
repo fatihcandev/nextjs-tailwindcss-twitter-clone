@@ -44,7 +44,7 @@ const Navbar = () => {
           </Typography>
           <Icon name="composeTweet" className={styles.tweetButtonIcon} />
         </Button>
-        <Button onClick={() => true} className={styles.userSection}>
+        <Button onClick={() => true} className={styles.userSection} full>
           <Avatar src="/images/fatih.jpg" size="sm" />
           <div className={styles.userSectionUserDetails}>
             <Typography variant="baseBold" color="text-text-primary">
