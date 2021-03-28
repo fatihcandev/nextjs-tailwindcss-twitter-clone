@@ -66,7 +66,7 @@ module.exports = {
       gridTemplateColumns: {
         'layout-sm': '70px 1fr',
         'layout-md': '70px 600px 280px',
-        'layout-lg': '280px 600px 393px',
+        'layout-lg': '263px 600px 393px',
       },
       gridTemplateRows: {
         'layout-inner-xs': '53px 1fr 53px',
