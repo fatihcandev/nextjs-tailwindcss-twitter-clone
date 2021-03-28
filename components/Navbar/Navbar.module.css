@@ -18,7 +18,8 @@ dark:border-dim-primary-xlight;
   @apply flex 
   flex-col
   items-start
-  pr-[37px]
+  pr-3
+  pb-3
   w-full;
 }
 
@@ -32,5 +33,22 @@ dark:border-dim-primary-xlight;
 
 .tweetButton {
   @apply h-12
-  mt-2;
+  mt-2
+  max-w-[225px];
+}
+
+.userSection {
+  @apply flex
+  items-center
+  mt-auto;
+}
+
+.userSectionUserDetails {
+  @apply flex
+  flex-col
+  ml-3;
+}
+
+.userSectionMoreIcon {
+  @apply ml-auto;
 }

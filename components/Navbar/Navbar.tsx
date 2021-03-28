@@ -1,6 +1,8 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 
+import { Avatar } from '../Avatar'
+import { Icon } from '../Icon'
 import { Button } from '../Button'
 import { LinkButton } from '../LinkButton'
 import { IconButton } from '../IconButton'
@@ -31,7 +33,7 @@ const Navbar = () => {
             </Typography>
           </LinkButton>
         ))}
-        <Button leftIcon="more" onClick={() => true} iconSize="26.25">
+        <Button leftIcon="moreWithCircle" onClick={() => true} iconSize="26.25">
           <Typography variant="lgBold" color="inherit" className={styles.text}>
             More
           </Typography>
@@ -40,6 +42,18 @@ const Navbar = () => {
           <Typography variant="baseBold" color="text-white">
             Tweet
           </Typography>
+        </Button>
+        <Button onClick={() => true} className={styles.userSection} full>
+          <Avatar src="/images/fatih.jpg" size="sm" />
+          <div className={styles.userSectionUserDetails}>
+            <Typography variant="baseBold" color="text-text-primary">
+              Fatih
+            </Typography>
+            <Typography variant="base" color="text-text-secondary">
+              @fatihcandev
+            </Typography>
+          </div>
+          <Icon name="more" className={styles.userSectionMoreIcon} />
         </Button>
       </div>
     </div>
