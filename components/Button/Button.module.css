@@ -22,7 +22,8 @@
   px-4
   bg-blue
 
-  hover:bg-blue-dark;
+  hover:bg-blue-dark
+  hover:text-white;
 }
 
 .full {
