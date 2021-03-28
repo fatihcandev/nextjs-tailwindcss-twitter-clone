@@ -4,7 +4,7 @@ import { Layout } from '../../components/Layout'
 
 const Profile = () => {
   return (
-    <Layout headerTitle="Profile" headerIcon="options">
+    <Layout headerTitle="Profile" headerPrimaryIcon="options">
       Profile
     </Layout>
   )
