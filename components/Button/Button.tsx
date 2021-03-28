@@ -25,7 +25,9 @@ const Button = React.forwardRef<HTMLAnchorElement, IButtonProps>(
         role="button"
         href={href}
         onClick={onClick}
-        className={`${styles.container} ${className} ${type && styles[type]} ${full && 'w-full'}`}
+        className={`${styles.container} ${className} ${type && styles[type]} ${
+          full && styles.full
+        }`}
         ref={ref}
       >
         {leftIcon && <Icon name={leftIcon} size={iconSize} />}
