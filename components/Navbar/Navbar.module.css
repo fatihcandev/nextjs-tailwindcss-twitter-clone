@@ -18,7 +18,9 @@ dark:border-dim-primary-xlight;
   @apply flex 
   flex-col
   items-start
-  px-3;
+  pl-4
+  pr-[37px]
+  w-full;
 }
 
 .text {
@@ -27,4 +29,9 @@ dark:border-dim-primary-xlight;
   hidden
   
   lg:flex;
+}
+
+.tweetButton {
+  @apply h-12
+  mt-2;
 }

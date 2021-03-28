@@ -12,7 +12,7 @@ import styles from './Navbar.module.css'
 
 const Navbar = () => {
   const { pathname } = useRouter()
-  const hrefs = ['/', '/explore', '/notifications', '/messages', '/profile']
+  const hrefs = ['/', '/explore', '/notifications', '/messages', '/bookmarks', '/lists', '/profile']
   const items = getNavbarItems({ hrefs, pathname })
   return (
     <div className={styles.container}>
@@ -34,6 +34,11 @@ const Navbar = () => {
         <Button leftIcon="more" onClick={() => true} iconSize="26.25">
           <Typography variant="lgBold" color="inherit" className={styles.text}>
             More
+          </Typography>
+        </Button>
+        <Button type="primary" onClick={() => true} className={styles.tweetButton} full>
+          <Typography variant="baseBold" color="text-white">
+            Tweet
           </Typography>
         </Button>
       </div>

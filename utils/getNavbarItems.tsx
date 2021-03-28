@@ -46,10 +46,24 @@ export const getNavbarItems = ({ hrefs, pathname }: GetNavbarItemsArgs): INavbar
     },
     {
       href: hrefs[4],
-      leftIcon: showFilledIcon(hrefs[4], pathname) ? 'profileFill' : 'profile',
+      leftIcon: showFilledIcon(hrefs[4], pathname) ? 'bookmarkFill' : 'bookmark',
+      iconSize: '26.25',
+      label: 'Bookmarks',
+      className: getColorClass(hrefs[4]),
+    },
+    {
+      href: hrefs[5],
+      leftIcon: showFilledIcon(hrefs[5], pathname) ? 'listsFill' : 'lists',
+      iconSize: '26.25',
+      label: 'Lists',
+      className: getColorClass(hrefs[5]),
+    },
+    {
+      href: hrefs[6],
+      leftIcon: showFilledIcon(hrefs[6], pathname) ? 'profileFill' : 'profile',
       iconSize: '26.25',
       label: 'Profile',
-      className: getColorClass(hrefs[4]),
+      className: getColorClass(hrefs[6]),
     },
   ]
 }
