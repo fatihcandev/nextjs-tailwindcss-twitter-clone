@@ -18,6 +18,8 @@ const Icon = ({ name, color, size = '22.5', className = '' }: IIconProps) => {
       return <Icons.Bookmark className={`${color} ${className}`} width={size} height={size} />
     case 'bookmarkFill':
       return <Icons.BookmarkFill className={`${color} ${className}`} width={size} height={size} />
+    case 'composeTweet':
+      return <Icons.ComposeTweet className={`${color} ${className}`} width={size} height={size} />
     case 'emoji':
       return <Icons.Emoji className={`${color} ${className}`} width={size} height={size} />
     case 'explore':
