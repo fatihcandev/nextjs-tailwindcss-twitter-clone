@@ -39,7 +39,7 @@ dark:border-dim-primary-xlight;
   w-12
   text-white
 
-  lg:max-w-[225px];
+  lg:w-[225px];
 }
 
 .tweetButtonText {
