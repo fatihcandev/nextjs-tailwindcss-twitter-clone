@@ -6,6 +6,7 @@ import { Navbar } from '../Navbar'
 import { NavbarMobile } from '../NavbarMobile'
 import { Sidebar } from '../Sidebar'
 import { TweetBox } from '../TweetBox'
+import { FAB } from '../FAB'
 
 import { IconName } from '../../types'
 
@@ -31,6 +32,8 @@ const Layout: React.FC<ILayoutProps> = ({
 }) => {
   const { pathname } = useRouter()
   const isSearch = pathname === '/explore'
+  const isMessages = pathname === '/messages'
+
   return (
     <div className={styles.container}>
       <Navbar />
@@ -45,7 +48,10 @@ const Layout: React.FC<ILayoutProps> = ({
           onSearchValueChange={onSearchValueChange}
         />
         <TweetBox />
-        <main>{children}</main>
+        <main>
+          {children}
+          <FAB type={isMessages ? 'message' : 'tweet'} />
+        </main>
         <NavbarMobile />
       </div>
       <Sidebar />

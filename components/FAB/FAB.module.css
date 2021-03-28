@@ -1,0 +1,11 @@
+.container {
+  @apply w-16
+  h-16
+  fixed
+  bottom-17
+  right-5
+  shadow-fab
+  text-white
+  
+  md:hidden;
+}

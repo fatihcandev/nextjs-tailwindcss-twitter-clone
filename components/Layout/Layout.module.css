@@ -3,7 +3,7 @@
   grid-cols-1 
   justify-center
   h-screen 
-  bg-white 
+  bg-white
 
   sm:grid-cols-layout-sm
   md:grid-cols-layout-md 
@@ -18,8 +18,3 @@
   grid-rows-layout-inner-xs 
   sm:grid-rows-layout-inner-sm;
 }
-
-/* 
-.main {
-  @apply pt-14;
-} */

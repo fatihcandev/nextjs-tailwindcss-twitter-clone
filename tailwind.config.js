@@ -72,6 +72,10 @@ module.exports = {
         'layout-inner-xs': '53px 1fr 53px',
         'layout-inner-sm': '53px 118px 1fr',
       },
+      boxShadow: {
+        fab: 'rgb(101 119 134 / 20%) 0px 0px 8px, rgb(101 119 134 / 25%) 0px 1px 3px 1px',
+        navbarTweetButton: 'rgb(0 0 0 / 8%) 0px 8px 28px',
+      },
     },
   },
   variants: {
