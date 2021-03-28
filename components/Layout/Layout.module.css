@@ -1,8 +1,9 @@
 .container {
   @apply grid 
   grid-cols-1 
+  justify-center
   h-screen 
-bg-white 
+  bg-white 
 
   sm:grid-cols-layout-sm
   md:grid-cols-layout-md 
