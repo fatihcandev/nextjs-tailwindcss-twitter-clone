@@ -38,6 +38,8 @@ const Icon = ({ name, color, size = '22.5', className = '' }: IIconProps) => {
       return <Icons.Lists className={`${color} ${className}`} width={size} height={size} />
     case 'listsFill':
       return <Icons.ListsFill className={`${color} ${className}`} width={size} height={size} />
+    case 'listsAdd':
+      return <Icons.ListsAdd className={`${color} ${className}`} width={size} height={size} />
     case 'media':
       return <Icons.Media className={`${color} ${className}`} width={size} height={size} />
     case 'messages':

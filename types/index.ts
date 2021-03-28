@@ -13,6 +13,7 @@ export type IconName =
   | 'home'
   | 'like'
   | 'listsFill'
+  | 'listsAdd'
   | 'lists'
   | 'media'
   | 'messagesFill'
