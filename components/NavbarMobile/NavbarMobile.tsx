@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import { IconButton } from '../IconButton'
 import { IIconButtonProps } from '../IconButton/IconButton'
 
-import { getNavbarMobileItems } from '../../utils/getNavbarMobileItems'
+import { getNavbarMobileItems } from '../../utils'
 
 import styles from './NavbarMobile.module.css'
 

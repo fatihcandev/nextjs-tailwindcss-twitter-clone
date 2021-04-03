@@ -8,7 +8,7 @@ import { LinkButton } from '../LinkButton'
 import { IconButton } from '../IconButton'
 import { Typography } from '../Typography'
 
-import { getNavbarItems } from '../../utils/getNavbarItems'
+import { getNavbarItems } from '../../utils'
 
 import styles from './Navbar.module.css'
 
