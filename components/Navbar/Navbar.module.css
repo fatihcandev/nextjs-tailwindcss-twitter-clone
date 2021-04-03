@@ -25,6 +25,10 @@ dark:border-dim-primary-xlight;
   lg:pb-3;
 }
 
+.navbarItem {
+  @apply py-1;
+}
+
 .text {
   @apply ml-5
   mr-4
@@ -35,7 +39,8 @@ dark:border-dim-primary-xlight;
 
 .tweetButton {
   @apply h-12
-  mt-2
+  mt-5
+  mb-4
   w-12
   text-white
   shadow-navbarTweetButton
@@ -59,7 +64,7 @@ dark:border-dim-primary-xlight;
   @apply flex
   items-center
   justify-center
-  mt-9
+  mt-auto
 
   lg:justify-start;
 }

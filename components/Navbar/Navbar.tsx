@@ -21,23 +21,27 @@ const Navbar = () => {
       <div className={styles.inner}>
         <IconButton iconName="twitter" iconColor="text-blue" iconSize="30" />
         {items.map(({ href, leftIcon, iconSize, label, className }, index) => (
-          <LinkButton
-            key={index}
-            href={href}
-            leftIcon={leftIcon}
-            iconSize={iconSize}
-            className={className}
-          >
-            <Typography variant="lgBold" color="inherit" className={styles.text}>
-              {label}
-            </Typography>
-          </LinkButton>
+          <div className={styles.navbarItem}>
+            <LinkButton
+              key={index}
+              href={href}
+              leftIcon={leftIcon}
+              iconSize={iconSize}
+              className={className}
+            >
+              <Typography variant="lgBold" color="inherit" className={styles.text}>
+                {label}
+              </Typography>
+            </LinkButton>
+          </div>
         ))}
-        <Button leftIcon="moreWithCircle" onClick={() => true} iconSize="26.25">
-          <Typography variant="lgBold" color="inherit" className={styles.text}>
-            More
-          </Typography>
-        </Button>
+        <div className={styles.navbarItem}>
+          <Button leftIcon="moreWithCircle" onClick={() => true} iconSize="26.25">
+            <Typography variant="lgBold" color="inherit" className={styles.text}>
+              More
+            </Typography>
+          </Button>
+        </div>
         <Button type="primary" onClick={() => true} className={styles.tweetButton}>
           <Typography variant="baseBold" color="inherit" className={styles.tweetButtonText}>
             Tweet
