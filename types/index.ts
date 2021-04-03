@@ -2,6 +2,7 @@ export type TypographyVariant = 'sm' | 'smBold' | 'base' | 'baseBold' | 'lg' | '
 
 export type IconName =
   | 'arrowBottom'
+  | 'arrowLeft'
   | 'bookmarkFill'
   | 'bookmark'
   | 'composeTweet'

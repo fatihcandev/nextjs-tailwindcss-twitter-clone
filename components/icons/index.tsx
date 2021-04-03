@@ -1,4 +1,5 @@
 export { default as ArrowBottom } from './ArrowBottom'
+export { default as ArrowLeft } from './ArrowLeft'
 export { default as BookmarkFill } from './BookmarkFill'
 export { default as Bookmark } from './Bookmark'
 export { default as ComposeTweet } from './ComposeTweet'

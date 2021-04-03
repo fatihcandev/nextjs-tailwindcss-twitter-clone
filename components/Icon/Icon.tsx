@@ -14,6 +14,8 @@ const Icon = ({ name, color, size = '22.5', className = '' }: IIconProps) => {
   switch (name) {
     case 'arrowBottom':
       return <Icons.ArrowBottom className={`${color} ${className}`} width={size} height={size} />
+    case 'arrowLeft':
+      return <Icons.ArrowLeft className={`${color} ${className}`} width={size} height={size} />
     case 'bookmark':
       return <Icons.Bookmark className={`${color} ${className}`} width={size} height={size} />
     case 'bookmarkFill':
