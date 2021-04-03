@@ -25,14 +25,8 @@ const Navbar = () => {
       <div className={styles.inner}>
         <IconButton iconName="twitter" iconColor="text-blue" iconSize="30" />
         {items.map(({ href, leftIcon, iconSize, label, className }, index) => (
-          <div className={styles.navbarItem}>
-            <LinkButton
-              key={index}
-              href={href}
-              leftIcon={leftIcon}
-              iconSize={iconSize}
-              className={className}
-            >
+          <div key={index} className={styles.navbarItem}>
+            <LinkButton href={href} leftIcon={leftIcon} iconSize={iconSize} className={className}>
               <Typography variant="lgBold" color="inherit" className={styles.text}>
                 {label}
               </Typography>
