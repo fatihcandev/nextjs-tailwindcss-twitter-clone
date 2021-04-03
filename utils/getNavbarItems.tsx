@@ -2,19 +2,27 @@ import { ILinkButtonProps } from '../components/LinkButton/LinkButton'
 
 import { showFilledIcon } from './showFilledIcon'
 
+import { IconName } from '../types'
+
 interface GetNavbarItemsArgs {
   hrefs: string[]
   pathname: string
+  isLargeScreen: boolean
 }
 
 interface INavbarItemProps extends ILinkButtonProps {
   label: string
 }
 
-export const getNavbarItems = ({ hrefs, pathname }: GetNavbarItemsArgs): INavbarItemProps[] => {
+export const getNavbarItems = ({
+  hrefs,
+  pathname,
+  isLargeScreen,
+}: GetNavbarItemsArgs): INavbarItemProps[] => {
   const getColorClass = (href: string): string =>
     showFilledIcon(href, pathname) ? 'text-blue' : 'text-text-primary'
-
+  const exploreDefaultIcon: IconName = isLargeScreen ? 'search' : 'explore'
+  const exploreFillIcon: IconName = isLargeScreen ? 'searchFocused' : 'explorerFill'
   return [
     {
       href: hrefs[0],
@@ -25,7 +33,7 @@ export const getNavbarItems = ({ hrefs, pathname }: GetNavbarItemsArgs): INavbar
     },
     {
       href: hrefs[1],
-      leftIcon: showFilledIcon(hrefs[1], pathname) ? 'explorerFill' : 'explore',
+      leftIcon: showFilledIcon(hrefs[1], pathname) ? exploreFillIcon : exploreDefaultIcon,
       iconSize: '26.25',
       label: 'Explore',
       className: getColorClass(hrefs[1]),

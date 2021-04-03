@@ -8,14 +8,18 @@ import { LinkButton } from '../LinkButton'
 import { IconButton } from '../IconButton'
 import { Typography } from '../Typography'
 
+import { useWindowWidth } from '../../hooks'
 import { getNavbarItems } from '../../utils'
+import { deviceSizes } from '../../constants'
 
 import styles from './Navbar.module.css'
 
 const Navbar = () => {
   const { pathname } = useRouter()
+  const { windowWidth } = useWindowWidth()
+  const isLargeScreen = windowWidth < deviceSizes.md
   const hrefs = ['/', '/explore', '/notifications', '/messages', '/bookmarks', '/lists', '/profile']
-  const items = getNavbarItems({ hrefs, pathname })
+  const items = getNavbarItems({ hrefs, pathname, isLargeScreen })
   return (
     <div className={styles.container}>
       <div className={styles.inner}>
