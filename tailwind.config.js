@@ -24,6 +24,7 @@ module.exports = {
       sm: '500px',
       md: '1005px',
       lg: '1281px',
+      xl: '1440px',
     },
     colors: {
       transparent: 'transparent',
@@ -64,8 +65,8 @@ module.exports = {
         17: '4.5rem',
       },
       gridTemplateColumns: {
-        'layout-sm': '70px 1fr',
-        'layout-md': '70px 600px 280px',
+        'layout-sm': '76.5px 1fr',
+        'layout-md': '76.5 600px 280px',
         'layout-lg': '263px 600px 393px',
       },
       gridTemplateRows: {
