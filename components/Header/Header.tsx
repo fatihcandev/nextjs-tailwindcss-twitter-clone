@@ -1,4 +1,6 @@
 import React from 'react'
+import { useRouter } from 'next/router'
+
 import { Avatar } from '../Avatar'
 import { Typography } from '../Typography'
 import { Search } from '../Search'
@@ -11,6 +13,7 @@ import styles from './Header.module.css'
 interface IHeaderProps {
   title?: string
   subtitle?: string
+  showBackButton?: boolean
   primaryIcon?: IconName
   secondaryIcon?: IconName
   isSearch?: React.ReactNode
@@ -23,6 +26,7 @@ interface IHeaderProps {
 const Header = ({
   title,
   subtitle,
+  showBackButton,
   primaryIcon,
   secondaryIcon,
   isSearch,
@@ -31,11 +35,16 @@ const Header = ({
   className = '',
   onAvatarClick,
 }: IHeaderProps) => {
+  const { back } = useRouter()
   return (
     <div className={`${styles.container} ${className}`}>
-      <div className={styles.avatar}>
-        <Avatar src="/images/fatih.jpg" onClick={onAvatarClick} />
-      </div>
+      {showBackButton ? (
+        <IconButton iconName="arrowLeft" iconColor="text-blue" onClick={back} />
+      ) : (
+        <div className={styles.avatar}>
+          <Avatar src="/images/fatih.jpg" onClick={onAvatarClick} />
+        </div>
+      )}
       {isSearch ? (
         <Search className={styles.search} value={searchValue} onChange={onSearchValueChange} />
       ) : (

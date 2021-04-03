@@ -15,6 +15,7 @@ import styles from './Layout.module.css'
 interface ILayoutProps {
   headerTitle?: string
   headerSubtitle?: string
+  showBackButton?: boolean
   headerPrimaryIcon?: IconName
   headerSecondaryIcon?: IconName
   searchValue?: string
@@ -24,15 +25,20 @@ interface ILayoutProps {
 const Layout: React.FC<ILayoutProps> = ({
   headerTitle,
   headerSubtitle,
+  showBackButton,
   headerPrimaryIcon,
   headerSecondaryIcon,
   searchValue,
   onSearchValueChange,
   children,
 }) => {
-  const { pathname } = useRouter()
+  const { pathname, push } = useRouter()
   const isSearch = pathname === '/explore'
   const isMessages = pathname === '/messages'
+
+  const goToComposeTweet = () => {
+    push('/compose/tweet')
+  }
 
   return (
     <div className={styles.container}>
@@ -41,6 +47,7 @@ const Layout: React.FC<ILayoutProps> = ({
         <Header
           title={headerTitle}
           subtitle={headerSubtitle}
+          showBackButton={showBackButton}
           primaryIcon={headerPrimaryIcon}
           secondaryIcon={headerSecondaryIcon}
           isSearch={isSearch}
@@ -50,7 +57,7 @@ const Layout: React.FC<ILayoutProps> = ({
         <TweetBox />
         <main>
           {children}
-          <FAB type={isMessages ? 'message' : 'tweet'} />
+          <FAB type={isMessages ? 'message' : 'tweet'} onClick={goToComposeTweet} />
         </main>
         <NavbarMobile />
       </div>
